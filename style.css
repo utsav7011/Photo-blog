@@ -1,0 +1,144 @@
+body{
+    background-image: url(./images/img1.jpeg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header
+{
+    height: auto;
+    background-color: black;
+    color: coral;
+    text-align: center;
+    font-size: 45px;
+    padding: 20px 0 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 5px 5px 20px  orange;
+    
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 100px;
+
+
+    height: auto;
+    width: 400px;
+    position: relative;
+    background-color:lightblue;
+    animation-name: position;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    /*animation: position 4s ease 2s infinite alternate (shorthand notation)*/ 
+
+}
+@keyframes position{
+    0% {
+        background-color: skyblue;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: red;
+        left: 50px;
+        top: 0pt;
+    }
+    50%{
+        background-color: olive;
+        left: 100px;
+        top: 0px;
+    }
+    75%{
+        background-color: yellow;
+        left: 100px;
+        top: 0px;
+    }
+    100%{
+        background-color: springgreen;
+        left: 150px;
+        top: 0px;
+    }
+}
+
+img{
+    height:400px;   
+    width: 300px;
+    padding: 10px;
+    margin: 10 0 10 0;
+    border:3px palegreen;
+    opacity: 0.7;
+}
+img:hover{
+    box-shadow: 5px 5px 10px 10px grey ;
+    opacity: 1;
+    height: 500px;
+    width: 400px;
+    cursor: pointer;
+}
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img1{
+    flex: 25%;
+    text-align: center;
+    margin-top: 50px;
+}
+.contact-form{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+form{
+    background-color: goldenrod;
+    color: white;
+    height: auto;
+    width: 750px;
+    margin: auto;
+    font-size: 34px;
+}
+input,textarea {
+    background-color: lightgoldenrodyellow;
+    border: none;
+    border-bottom: 10px double green ;
+    font-size: 34px;
+}
+input:focus,textarea:focus{
+    outline: none;
+    box-shadow: 5px 5px 10px 10px yellow;
+}
+
+legend{
+    text-align: center;
+}
+legend{
+    font-size: 40px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button{
+    font-size: 25px;
+    background-color: goldenrod;
+    color: white;
+    border: 5px double white;
+    
+}
+
+.footer{
+    font-size: 48px;
+    text-align: right;
+    color: white;
+}
+
+.footer2{
+    font-size: 30px;
+    text-align: right;
+}
+
+
+
